@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="This is Bakuyy!!! — occult themed sablon studio" />
+    <title>Bakuyy — Church of Ink</title>
+
+    <!-- Gothic font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=UnifrakturCook:700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Background smoke / stars -->
+    <div class="bg-veil"></div>
+
+    <!-- Audio (place ambient.mp3 in same folder or change src) -->
+    <audio id="ambientAudio" loop preload="none">
+        <source src="ambient.mp3" type="audio/mpeg">
+        <!-- Add your audio file ambient.mp3 -->
+    </audio>
+
+    <!-- NAVBAR -->
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="left">
+                <div class="logo-wrap">
+                    <!-- small pentagram SVG -->
+                    <svg class="mini-pent" viewBox="0 0 100 100" aria-hidden="true">
+                        <polygon points="50,5 61,37 95,37 67,57 77,89 50,70 23,89 33,57 5,37 39,37" fill="none"
+                            stroke="crimson" stroke-width="3" />
+                    </svg>
+                </div>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="controls">
+                <button id="playAmb" class="btn-ghost" title="Play ambience">🔊</button>
+                <button id="themeToggle" class="btn-ghost" title="Toggle light/dark">☾</button>
+                <div class="hamburger" id="hamb"><span></span><span></span><span></span></div>
+            </div>
+        </nav>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-inner">
+                <!-- large stylized pentagram -->
+                <div class="pentagram" aria-hidden="true">
+                    <!-- inline SVG pentagram for crisp look -->
+                    <svg viewBox="0 0 200 200">
+                        <defs>
+                            <linearGradient id="g1" x1="0" x2="1">
+                                <stop offset="0%" stop-color="#330000" />
+                                <stop offset="100%" stop-color="#660000" />
+                            </linearGradient>
+                        </defs>
+                        <polygon points="100,10 123,74 190,74 136,112 156,180 100,140 44,180 64,112 10,74 77,74"
+                            stroke="rgba(200,20,20,0.9)" stroke-width="2" fill="none" />
+                    </svg>
+                </div>
+
+                <h1 class="main-title">THIS IS <span class="accent">BAKUYY</span></h1>
+                <p class="subtitle">Every man for himself, the devil for all.</p>
+
+                <div class="hero-cta">
+                    <a href="#gallery" class="cta primary">View Gallery</a>
+                    <a href="https://wa.me/6285794012886" target="_blank" class="cta ghost">Chat WhatsApp</a>
+                </div>
+
+                <div class="sigil">☩</div>
+            </div>
+        </section>
+    </header>
+
+    <!-- ABOUT -->
+    <main>
+        <section id="about" class="section card fade-up">
+            <div class="container">
+                <h2>Ritual & Philosophy</h2>
+                <p>The philosophy of Satanism can be divided into two, theistic Satanism (worshipping Satan as a god)
+                    and atheistic Satanism (not worshipping a god, but making Satan a symbol of individuality, freedom,
+                    and rebellion against social norms).</p>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="section dark-grid fade-up">
+            <div class="container">
+                <h2>Quotes</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Michael Jackson - American singer and songwriter (1958 - 2009)</h3>
+                        <p>I believe in the Bible and I try to follow the Bible. I know I'm an imperfect person … I'm
+                            not making myself an angel because I'm not an angel and I'm not a devil either. I try to be
+                            the best I can and I try to do what I think is right.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Stephen King - Writer from the United States (1947 - )</h3>
+                        <p>The devil's voice is sweet to hear.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Charles Baudelaire - Poet from France (1821 - 1867)</h3>
+                        <p>La plus belle des ruses du diable est de vous persuader qu'il n'existe pas.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="gallery" class="section gallery-section fade-up">
+            <div class="container">
+                <h2>Work Gallery</h2>
+                <div class="gallery-grid">
+                    <figure><img src="kripi 1.jpg" alt="karya 1">
+                        <figcaption>Ritual Tee</figcaption>
+                    </figure>
+                    <figure><img src="kripii 2.jpg" alt="karya 2">
+                        <figcaption>Pentagram Bag</figcaption>
+                    </figure>
+                    <figure><img src="kripi 3.jpg" alt="karya 3">
+                        <figcaption>Sigil Print</figcaption>
+                    </figure>
+                    <figure><img src="kripi 4.jpg" alt="karya 4">
+                        <figcaption>Limited Press</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section card fade-up">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contactForm" class="form">
+                    <input type="text" name="name" placeholder="Nama lengkap lu ya njing" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="msg" rows="5" placeholder="Deskripsi keluh kesah lu" required></textarea>
+                    <div class="form-row">
+                        <button type="submit" class="btn primary">Submit</button>
+                        <a class="btn ghost" href="https://wa.me/6285794012886" target="_blank">WhatsApp</a>
+                    </div>
+                    <p class="note">Or send a design image via WhatsApp for a quick estimate.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container small">
+            <p>&copy; 2025 Bakuyy. All rites reserved. Designed in shadow.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WA & Back to top -->
+    <a class="whatsapp-float" href="https://wa.me/6285794012886" target="_blank" aria-label="Chat WhatsApp">💬</a>
+    <button id="backToTop" title="Ke atas">⬆</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
